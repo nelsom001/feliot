@@ -1,0 +1,43 @@
+:root {
+  --p: #2f4f4f;
+  --bg: #f5f5dc;
+  --t: #333333;
+  --w: #ffffff;
+  --s: #daa520;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: var(--text);
+}
+body {
+  background: var(--bg);
+  color: var(--t);
+}
+::selection {
+  background: var(--p);
+  color: var(--w);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--special);
+}

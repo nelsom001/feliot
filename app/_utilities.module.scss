@@ -1,0 +1,62 @@
+@use "sass:color";
+@mixin keyframes($action) {
+  @keyframes #{$action} {
+    @content;
+  }
+}
+@function cwo($color, $opacity) {
+  $rgbaColor: rgba($color, $opacity);
+  @return $rgbaColor;
+}
+@function cwb($color, $brightness) {
+  $adjustedColor: color.adjust($color, $lighten: $brightness);
+  @return $adjustedColor;
+}
+
+$p: #2f4f4f;
+$bg: #f5f5dc;
+$t: #333333;
+$w: #ffffff;
+$s: #daa520;
+
+@mixin animate($name, $duration, $method, $delay, $loop) {
+  animation: $name $duration $method $loop;
+}
+
+@include keyframes(circleShow) {
+  0% {
+    clip-path: circle(19.1% at 51% 46%);
+  }
+  10% {
+    clip-path: circle(23.3% at 59% 59%);
+  }
+  20% {
+    clip-path: circle(24.8% at 36% 63%);
+  }
+  30% {
+    clip-path: circle(29.6% at 32% 36%);
+  }
+  40% {
+    clip-path: circle(40.5% at 54% 43%);
+  }
+  50% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  70% {
+    clip-path: circle(71.5% at 50% 51%);
+  }
+  100% {
+    clip-path: circle(28.6% at 50% 51%);
+  }
+}
+@include keyframes(cycle) {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

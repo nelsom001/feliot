@@ -1,0 +1,32 @@
+@use "../../../utilities.module" as *;
+.footer {
+  display: flex;
+  background-color: $p;
+  color: $w;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+//sm devices
+//sm devices
+//sm devices
+
+@media (max-width: 800px) {
+  .footer {
+    .top {
+      gap: 50px;
+      flex-direction: column;
+      padding: 5vh 5%;
+      > div {
+        flex: unset;
+      }
+      .links {
+        gap: 50px;
+        flex-direction: column;
+      }
+    }
+  }
+}

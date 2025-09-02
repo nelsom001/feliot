@@ -1,0 +1,66 @@
+@use "../../../utilities.module" as *;
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  padding: 5%;
+  margin-top: 5%;
+  border-top: 1px solid $t;
+  font-weight: 500;
+  div {
+    display: flex;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    color: $p;
+  }
+  .grid {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    .item {
+      min-width: 30%;
+      flex: 1;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      border: 1px solid cwo($t, 0.2);
+      padding: 12px;
+      border-radius: 12px;
+      background-color: cwo($w, 0.5);
+      font-size: 0.9rem;
+      gap: 20px;
+      > :first-child {
+        flex: 3;
+      }
+      > :last-child {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    .title {
+      font-size: 2rem;
+    }
+    .grid {
+      flex-direction: column;
+      gap: 20px;
+      .item {
+        flex: unset;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+export const COMPANYNAME = `FELIOTH SIGNATURE`;
+export const HQ = `157 IDIMU EJIGBO ROAD, EJIGBO, LAGOS STATE`;
+
+export const FOODMENU = [
+  { name: "RICE", price: 2000 },
+  { name: "EGG", price: 2000 },
+  { name: "CHICKEN / TURKEY / GOAT MEAT / BEEF / FISH", price: 6000 },
+  { name: "RICE, CHICKEN/TURKEY / GOAT MEAT / BEEF / FISH", price: 8000 },
+  { name: "RICE AND EGG", price: 4000 },
+  { name: "INDOMIE", price: 2000 },
+  { name: "INDOMIE AND EGG", price: 4000 },
+  {
+    name: "INDOMIE AND CHICKEN / TURKEY / GOATMEAT / BEEF / FISH",
+    price: 8000,
+  },
+  {
+    name: "INDOMIE, EGG, CHICKEN / TURKEY / GOAT MEAT/BEEF / FISH",
+    price: 9000,
+  },
+  { name: "GIZZARD", price: 2000 },
+  { name: "SPAGHETTI", price: 2000 },
+  { name: "SPAGHETTI AND EGG", price: 4000 },
+  { name: "SPAGHETTI AND GIZARD", price: 4000 },
+  { name: "SPAGHETTI, CHICKEN/TURKEY / GOAT MEAT / BEEF / FISH", price: 8000 },
+  { name: "POUNDO", price: 2000 },
+  { name: "EGUSI SOUP", price: 1000 },
+  { name: "VEGETABLE SOUP", price: 1000 },
+  { name: "GARRI/SEMO", price: 1000 },
+  {
+    name: "POUNDO, EGUSI, CHICKEN/TURKEY / GOAT MEAT / BEEF / FISH",
+    price: 9000,
+  },
+  {
+    name: "POUNDO, VEGETABLE, CHICKEN/TURKEY / GOAT MEAT / BEEF / FISH",
+    price: 9000,
+  },
+  {
+    name: "GARRI, EGUSI / VEGETABLE, CHICKEN / TURKEY / GOAT MEAT / BEEF / FISH",
+    price: 8000,
+  },
+  { name: "CHICKEN SAUCE", price: 6000 },
+  { name: "TURKEY SAUCE", price: 6000 },
+  { name: "GIZZARD SAUCE", price: 2000 },
+  { name: "CATFISH PEPPER SOUP", price: 10000 },
+  { name: "FRIED CATFISH", price: 12000 },
+];
+
+export const DRINKSMENU = [
+  {
+    category: "SOFT DRINKS",
+    data: [
+      { name: "CAN FANTA", price: 1000 },
+      { name: "CAN COKE", price: 1000 },
+      { name: "CAN SCHWEPPES", price: 1000 },
+      { name: "CHIVITA", price: 3000 },
+      { name: "HOLLANDIA", price: 3000 },
+      { name: "WATER", price: 500 },
+      { name: "AMSTEL MALT", price: 1000 },
+      { name: "CRANBERRY", price: 10000 },
+      { name: "5 ALIVE", price: 2500 },
+    ],
+  },
+  {
+    category: "WHISKEY & GIN",
+    data: [
+      { name: "JACK DANIELS", price: 40000 },
+      { name: "JACK DANIELS HONEY", price: 70000 },
+      { name: "RED LABEL", price: 30000 },
+      { name: "BLACK LABEL", price: 52000 },
+      { name: "JAMESON IRISH", price: 35000 },
+      { name: "JAMESON BLACK BARREL", price: 50000 },
+      { name: "GLENFIDDICH 18YRS", price: 160000 },
+      { name: "SMALL BEST WHISKEY", price: 3000 },
+    ],
+  },
+  {
+    category: "CREAM & LIQUOR",
+    data: [
+      { name: "BAILEYS", price: 30000 },
+      { name: "SMALL BEST CREAM", price: 3000 },
+    ],
+  },
+  {
+    category: "COGNAC",
+    data: [
+      { name: "HENNESSY VS", price: 60000 },
+      { name: "HENNESSEY VSOP", price: 120000 },
+      { name: "MARTEL", price: 60000 },
+      { name: "MARTEL BLUE SWIFT", price: 120000 },
+    ],
+  },
+  {
+    category: "TEQUILA, ENERGYDRINKS, BITTERS, & VODKA",
+    data: [
+      { name: "SIERRA TEQUILA", price: 25000 },
+      { name: "BIG KUEMMERLING", price: 15000 },
+      { name: "SMALL KUEMMERLING", price: 3000 },
+      { name: "ORIJIN PLASTIC", price: 2000 },
+      { name: "BLACK BULLET", price: 2500 },
+      { name: "RED BULL", price: 2500 },
+      { name: "BLACK STALLION", price: 2500 },
+      { name: "SMALL CAMPARI", price: 10000 },
+      { name: "BIG CAMPARI", price: 30000 },
+    ],
+  },
+  {
+    category: "WINE",
+    data: [
+      { name: "CARLO ROSSI", price: 15000 },
+      { name: "ASCONI AGOR", price: 15000 },
+      { name: "FOUR COUSINS", price: 12500 },
+      { name: "ROBERTSON", price: 15000 },
+      { name: "CRYSTAL HEAVEN", price: 10000 },
+      { name: "ANDRE ROSE", price: 20000 },
+    ],
+  },
+  {
+    category: "BEERS",
+    data: [
+      { name: "GULDER", price: 1500 },
+      { name: "TROPHY", price: 1500 },
+      { name: "HEINEKEN", price: 2000 },
+      { name: "STAR", price: 1500 },
+      { name: '"33" EXPORT', price: 1500 },
+      { name: "TIGER", price: 1500 },
+      { name: "TURBORKING", price: 2000 },
+      { name: "SMALL SMIRNOFF ICE", price: 1500 },
+      { name: "BIG STOUT", price: 2000 },
+      { name: "LEGEND", price: 2000 },
+      { name: "GOLDBERG", price: 1500 },
+      { name: "DESPERADO", price: 1500 },
+      { name: "SMALL STOUT", price: 1500 },
+      { name: "BUDWEISER", price: 2000 },
+      { name: "CASTLE LITE", price: 1500 },
+      { name: "FLYING FISH", price: 1500 },
+      { name: "BIG SMIRNOFF ICE", price: 2000 },
+      { name: "BOTTLE ORLJIN", price: 1500 },
+    ],
+  },
+];

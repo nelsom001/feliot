@@ -1,0 +1,50 @@
+@import "../../../utilities.module";
+
+.topper {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  .img {
+    width: 50%;
+    height: 70vh;
+    position: relative;
+    img {
+      object-fit: cover;
+    }
+  }
+  .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5%;
+    gap: 20px;
+
+    h1 {
+      font-size: 4rem;
+
+      color: $p;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topper {
+    flex-direction: column;
+
+    .img {
+      width: 100%;
+      height: 30vh;
+    }
+    .text {
+      width: 100%;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
