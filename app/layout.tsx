@@ -50,8 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${openSance.variable} ${lobster.variable}`}>
       <body>
-        <Nav />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>

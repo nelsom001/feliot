@@ -1,7 +1,6 @@
-import { Topper, TopperType } from "../../components/js/carousel/carousel";
-import { DRINKSMENU } from "../../components/js/config";
-
-import GridBox from "../../components/js/grid/grid";
+import Topper, { TopperType } from "@/app/components/js/carousel/carousel";
+import { DRINKSMENU } from "@/app/components/js/config";
+import GridBox from "@/app/components/js/grid/grid";
 
 export default function Home() {
   const data: TopperType = {

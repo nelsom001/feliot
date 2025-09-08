@@ -15,24 +15,38 @@ interface LinkType {
   icon: IconType;
 }
 
-const Nav: React.FC = () => {
-  const topLinks: LinkType[] = [
-    {
-      link: "/",
-      text: "Food",
-      icon: FaBowlFood,
-    },
-    {
-      text: "Drinks",
-      link: "/drinks",
-      icon: IoWineSharp,
-    },
-  ];
+const Nav: React.FC<{ vip?: boolean }> = ({ vip = false }) => {
+  const topLinks = vip
+    ? [
+        {
+          link: "/en/food",
+          text: "Food",
+          icon: FaBowlFood,
+        },
+        {
+          text: "Drinks",
+          link: "/en/drinks",
+          icon: IoWineSharp,
+        },
+      ]
+    : [
+        {
+          link: "/",
+          text: "Food",
+          icon: FaBowlFood,
+        },
+        {
+          text: "Drinks",
+          link: "/drinks",
+          icon: IoWineSharp,
+        },
+      ];
+
   const pathName = usePathname();
   return (
     <nav className={styles.nav}>
       <div className={styles.top}>
-        <Link href={"/"} className={styles.logo}>
+        <Link href={"#"} className={styles.logo}>
           <Image src={"/logo.png"} fill alt={COMPANYNAME} />
         </Link>
         <span>{COMPANYNAME}</span>
